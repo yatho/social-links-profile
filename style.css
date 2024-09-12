@@ -1,0 +1,82 @@
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+
+  --font-size: 14px;
+  --font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--color-white);
+  background: var(--color-grey-900);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+div.social {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grey-800);
+  gap: 1rem;
+  border-radius: 10px;
+
+  h1 {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: var(--font-size);
+    opacity: 0.7;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 40%;
+  }
+
+  p {
+    color: var(--color-green);
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    color: var(--color-white);
+  }
+
+  a {
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+    background: var(--color-grey-700);
+    align-self: stretch;
+    border-radius: 10px;
+
+    @media screen and (width > 350px) {
+      width: 300px;
+    }
+
+    &:hover {
+      background-color: var(--color-green);
+      color: var(--color-grey-900);
+    }
+  }
+}
